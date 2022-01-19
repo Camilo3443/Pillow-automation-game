@@ -1,0 +1,23 @@
+# IDE
+.vim
+
+# Por hora, acabei de criar o arquivo
+devlog.md
+
+# test
+test.py
+
+# cache
+/src/__pycache__
+/captcha/__pycache__
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# vscode plugins
+/.history
+log/logger.log
+/venv/
+/log/
