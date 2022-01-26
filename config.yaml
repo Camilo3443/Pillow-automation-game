@@ -2,20 +2,20 @@
   # Connection settings for Telegram
   telegram_log:
     active: True
-    token: ''
-    chatid: ''
+    token: '5041788603:AAE36ekkRQ2rnR_JSHpmXCieZU-Tg9LxlFY'
+    chatid: '599776595'
     
 
   time_intervals:
     
     # Default (minutes): 10
-    send_heroes_for_work: 15
+    send_heroes_for_work: 50
 
     # Default (minutes): 3
     refresh_heroes_positions: 5
 
     # Default (seconds): 5
-    check_for_new_map_button: 2
+    check_for_new_map_button: 5
 
     # Default (minutes): 5
     check_for_login: 5

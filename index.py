@@ -496,11 +496,34 @@ def main():
                 if clickbtn(images['new-map']):
                     telsendtext(f'We completed another map in %s' % currentWindow['window'].title)
                     loggerMapClicked()
-                    time.sleep(3)
+                    time.sleep(10)
+
+                    print('JAILSSS____>')
                     num_jaulas = len(positions(images['jail'], threshold=0.8))
                     if num_jaulas > 0:
                         telsendtext(
                             f'Congratulations we have{num_jaulas} new cage(s) on the new map at  %s' % currentWindow[
+                                'window'].title)
+                    time.sleep(10)
+                    print('KEYS____>')
+                    num_keys = len(positions(images['keys'], threshold=0.8))
+                    if num_keys > 0:
+                        telsendtext(
+                            f'Congratulations we have{num_keys} new keys(s) on the new map at  %s' % currentWindow[
+                                'window'].title)
+                    time.sleep(10)
+                    print('BLUE____>')
+                    num_bluebox = len(positions(images['bluebox'], threshold=0.8))
+                    if num_bluebox > 0:
+                        telsendtext(
+                            f'we have{num_bluebox} BLUE Box(s) on the new map at  %s' % currentWindow[
+                                'window'].title)
+                    time.sleep(10)
+                    print('GOLD____>')
+                    num_goldbox = len(positions(images['goldbox'], threshold=0.8))
+                    if num_goldbox > 0:
+                        telsendtext(
+                            f'we have{num_goldbox} GOLD Box(s) on the new map at  %s' % currentWindow[
                                 'window'].title)
 
                 if now - currentWindow['refresh_heroes'] > addrandomness(t['refresh_heroes_positions'] * 60):
